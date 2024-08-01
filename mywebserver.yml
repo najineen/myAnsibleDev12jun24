@@ -11,5 +11,10 @@
   - name: in this task, i want to start apache2 webserver
     service:
       name: apache2
-      state: present
+      state: started
     when: ansible_os_family== "Debian"
+  - name: in this task, i want to install redhat2 webserver
+    apt:
+      name: httpd
+      state: present
+    when: ansible_os_family== "redhat2" 
