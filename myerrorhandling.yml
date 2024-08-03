@@ -1,0 +1,15 @@
+---
+- hosts: 10.0.0.5
+  become: yes
+  tasks:
+    - name: i want to install git
+      apt:
+         name: git
+         stateee: present
+         ignore_errors: true
+
+    - name: i want to install tree
+      apt:
+         name: tree
+         state: present
+     

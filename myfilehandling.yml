@@ -1,0 +1,13 @@
+---
+- hosts: all 
+  become: yes
+  tasks:
+  - include_tasks: myfile.yml
+  - name: copy file from master to nodes
+    copy: 
+     src: mycopyfile
+     dest: /home/maha/mycopyfile 
+  - name: copy indexfile from master to nodes
+    template: 
+     src: myindexfile.j2
+     dest: /var/www/html/index.html
