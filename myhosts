@@ -3,8 +3,7 @@
 10.0.0.6
 
 [myappservers]
-10.0.0.5    
-10.0.0.6
+10.0.0.5
 
 [myDBservers]
 10.0.0.5    
@@ -18,9 +17,6 @@
 10.0.0.5    
 10.0.0.6
 
-[mywebservers:vars]
-var01= value
-mywebpackonubuntu= apache2
-mywebpackonredhat= httpd
+
   
   

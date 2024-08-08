@@ -1,0 +1,6 @@
+---
+- name: create tomcat user
+  user:
+    name:  tomcat
+    shell: /bin/false tomcat
+    home: /opt/tomcat
